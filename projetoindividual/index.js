@@ -1,4 +1,4 @@
-//No terminal use os comandos:
+//Use os comandos no terminal:
 //npm init
 //npm install readline-sync
 //node index.js
