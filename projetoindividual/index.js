@@ -1,15 +1,20 @@
-import readlineSync from "readline-sync"
-const properties = [];
-let input = "";
+//No terminal use os comandos:
+//npm init
+//npm install readline-sync
+//node index.js
 
-console.log("Digite as propriedades CSS. Para finalizar digite 'SAIR'.");
+import readlineSync from "readline-sync" //O readline é um módulo que fornece uma interface para ler dados sendo uma linha por vez. 
+const prop = [];  
+let input = "";  
 
-while (input.toLowerCase() !== "sair") {
-input = readlineSync.question("Insira uma propriedade: ");
-if (input.toLowerCase() !== "sair") {
-properties.push(input);
+console.log("Digite as propriedades CSS. Para finalizar digite 'SAIR'."); 
+
+while (input.toLowerCase() !== "sair") {   // Este laço será computado até que o valor no input seja diferente de "SAIR". O texto é convertido para letra minúscula.
+input = readlineSync.question("Insira uma propriedade: ");  // Esta mensagem será impressa enquanto o laço for válido. O "question" aguarda uma resposta.
+if (input.toLowerCase() !== "sair") {  
+prop.push(input);  // O método push adiciona as novas propriedades ao final do array, criando assim, a lista.
 }
 }
 
 console.log("Lista ordenada de propriedades CSS:")
-console.log(properties.sort().join("\n"));
+console.log(prop.sort().join("\n"));   // O método "sort()" ordena as strings e o "join()" retorna novas strings concatenando-as e "criando" um novo array ordenado.
