@@ -21,11 +21,11 @@
 
 Use este comando no terminal para iniciar o Node:
 
-``` npm no nó ```
+``` npm init ```
 
 Instalação do pacote readline que permite inserir entradas no terminal:
 
-``` npm i readline ```
+``` npm i readline-sync ```
 
 ## Iniciando a aplicação no console
 ``` node index.js ``` para iniciar a aplicação no console.
